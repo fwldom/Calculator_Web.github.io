@@ -28,3 +28,6 @@ function calculate() {
 function clearDisplay() {
     document.getElementById("display").value = "";
 }
+document.getElementById("back").addEventListener("click", function () {
+    CloseToPlus();
+})
