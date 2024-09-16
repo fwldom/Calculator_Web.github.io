@@ -10,7 +10,7 @@ function append(text) {
 function CloseToPlus() {
     try {
     const ipc = require('electron').ipcRenderer;
-        ipc.send("load-file","../../index.html");
+        ipc.send("load-file","./plus/index.html");
     }
     catch {}
 }
