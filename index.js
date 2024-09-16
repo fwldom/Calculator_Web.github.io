@@ -7,6 +7,13 @@ function append(text) {
     var length = inputField.value.length;
     inputField.style.fontSize = (length > 8 ? (35 / (length / 100)) + '%' : '4rem');
 }
+function CloseToPlus() {
+    try {
+    const ipc = require('electron').ipcRenderer;
+        ipc.send("load-file","../../index.html");
+    }
+    catch {}
+}
 function calculate() {
     try {
         document.getElementById("display").value = eval(document.getElementById("display").value);
